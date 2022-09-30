@@ -221,6 +221,10 @@ button {
   max-width: 362px;
 }
 
+.body {
+  background: #E5E5E5;
+}
+
 .main {
   background: url(../img/Rectangle\ 2.jpg) center top no-repeat;
   margin-bottom: 176px;
@@ -515,15 +519,17 @@ button {
   padding: 0px 0px 50% 0px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 23px;
 }
 .help__pic-one {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 16px;
 }
 .help__text-one {
   position: absolute;
@@ -549,6 +555,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 16px;
 }
 .help__text-two {
   position: absolute;
@@ -862,9 +869,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 80px;
 }
 @media (max-width: 767px) {
@@ -1078,5 +1085,135 @@ button {
     line-height: 130%;
     font-weight: 400;
     color: #828282;
+  }
+}
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.menu__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #363431;
+}
+@media (max-width: 400px) {
+  .menu__link {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .services__non-padding {
+    padding: 0;
+  }
+}
+.services__title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 46px;
+  color: #363431;
+  text-align: center;
+}
+@media (max-width: 400px) {
+  .services__title {
+    font-size: 28px;
+    line-height: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .services__choice {
+    display: none;
+  }
+}
+.services__card-one, .services__card-two, .services__card-three, .services__card-four, .services__card-five, .services__card-six, .services__card-seven, .services__card-eight, .services__card-nine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+.services__card-nine {
+  margin-bottom: 176px;
+}
+@media (max-width: 767px) {
+  .services__card-one, .services__card-two, .services__card-three, .services__card-four, .services__card-five {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services__card-six, .services__card-seven, .services__card-eight, .services__card-nine {
+    display: none;
+  }
+}
+.services__col {
+  width: 100%;
+  margin-right: 32px;
+}
+.services__col:last-child {
+  margin-right: 0;
+}
+.services__img {
+  position: relative;
+  padding: 0px 0px 50% 0px;
+}
+.services__pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px 16px 0px 0px;
+}
+.services__list {
+  background: #F9F9F9;
+  border-radius: 0px 0px 16px 16px;
+  padding-left: 48px;
+  height: 296px;
+}
+.services__name {
+  font-size: 32px;
+  line-height: 130%;
+  font-weight: 400;
+  color: #363431;
+  padding-top: 48px;
+  margin-bottom: 24px;
+}
+@media (max-width: 400px) {
+  .services__name {
+    font-size: 18px;
+  }
+}
+.services__item {
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 400;
+  color: #363431;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+@media (max-width: 400px) {
+  .services__item {
+    font-size: 18px;
+  }
+}
+.services__price-laser {
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 400;
+  color: #363431;
+  cursor: pointer;
+  text-decoration: underline;
+}
+@media (max-width: 400px) {
+  .services__price-laser {
+    font-size: 14px;
   }
 }
