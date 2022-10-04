@@ -1050,6 +1050,7 @@ button {
 @media (max-width: 767px) {
   .footer__links {
     left: 184px;
+    top: -15px;
   }
 }
 .footer__confidentiality {
