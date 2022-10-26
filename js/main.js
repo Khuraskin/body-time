@@ -78,9 +78,6 @@ const prevSlide = () => {
     }
 }
 
-next.addEventListener("click", nextSlide);
-prev.addEventListener("click", prevSlide);
-
 dots.forEach((item, indexDot) => {
     item.addEventListener("click", () => {
         index = indexDot;
@@ -88,9 +85,6 @@ dots.forEach((item, indexDot) => {
     });
 });
 
-let select = document.querySelector(".services__select");
-select.onchange = function() {
-    location.assign(this.value);    
-}
-
-
+next.addEventListener("click", nextSlide);
+prev.addEventListener("click", prevSlide);
+setInterval(nextSlide, 2500);
