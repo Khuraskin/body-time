@@ -82,8 +82,8 @@ dots.forEach((item, indexDot) => {
     item.addEventListener("click", () => {
         index = indexDot;
         prepareCurrentSlide(index);
-    });
-});
+    })
+})
 
 next.addEventListener("click", nextSlide);
 prev.addEventListener("click", prevSlide);
