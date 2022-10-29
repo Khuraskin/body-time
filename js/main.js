@@ -88,3 +88,12 @@ dots.forEach((item, indexDot) => {
 next.addEventListener("click", nextSlide);
 prev.addEventListener("click", prevSlide);
 setInterval(nextSlide, 2500);
+
+// Scroll
+const downElem = document.getElementById("main__down");
+const endScroll = document.getElementById("footer");
+
+downElem.addEventListener("click", function () {
+  endScroll.scrollIntoView({ behavior: "smooth" });
+});
+
