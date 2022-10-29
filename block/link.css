@@ -1065,6 +1065,7 @@ button {
   color: #363431;
   border: 1px solid #828282;
   border-radius: 4px;
+  background: #ffffff;
   outline: none;
   cursor: pointer;
   appearance: none;
