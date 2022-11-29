@@ -1,0 +1,23 @@
+.map {
+
+    &__pic {
+        width: 100%;
+    }
+
+    @media (max-width:767px) {
+        &__pic {
+            display: none;
+        }
+    }
+
+    &__pic-small {
+        width: 100%;
+        display: none;
+    }
+
+    @media (max-width:767px) {
+        &__pic-small {
+            display: inline;
+        }
+    }
+}
