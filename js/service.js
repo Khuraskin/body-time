@@ -5,4 +5,4 @@ const init = () => {
    zoom: 11,
    controls: [],
  });
- 
+}
