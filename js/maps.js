@@ -24,7 +24,7 @@ const init = () => {
       {
         draggable: false,
         iconLayout: "default#image",
-        iconImageHref: "../img/icon/icons8-map-marker-64.png",
+        iconImageHref: "./img/icon/icons8-map-marker-64.png",
         iconImageSize: [60, 60],
         iconImageOffset: [-35, -52],
       }
