@@ -19,6 +19,8 @@ const init = () => {
       }
     );
 
+  myMap.behaviors.disable(["drag", "dblClickZoom", "multiTouch"]);
+
   for (let i = 0; i < coords.length; i++) {
     myCollection.add(new ymaps.Placemark(coords[i]));
   }
