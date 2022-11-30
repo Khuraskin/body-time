@@ -5,3 +5,5 @@ const init = () => {
    zoom: 18,   
  });
 }
+
+ymaps.ready(init);
