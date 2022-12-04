@@ -6,7 +6,7 @@
 
   @media (max-width: 767px) {
     & {
-      background: url(../img/Rectangle\ 2\ 320.jpg) no-repeat;
+      background: url(../img/Rectangle\ 2\ 320.jpg) center no-repeat;
       background-size: 100% 100%;
       margin-bottom: 72px;
     }
@@ -99,7 +99,7 @@
   }
 
   @media (max-width: 400px) {
-    &__btn {
+    &__button {
       margin-bottom: 15px;
     }
   }

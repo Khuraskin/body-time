@@ -49,6 +49,11 @@ button {
   cursor: pointer;
 }
 
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
 .container {
   max-width: 1600px;
   width: 100%;
@@ -290,7 +295,7 @@ button {
 }
 @media (max-width: 767px) {
   .main {
-    background: url(../img/Rectangle\ 2\ 320.jpg) no-repeat;
+    background: url(../img/Rectangle\ 2\ 320.jpg) center no-repeat;
     background-size: 100% 100%;
     margin-bottom: 72px;
   }
@@ -410,7 +415,7 @@ button {
   cursor: pointer;
 }
 
-.wrap {
+.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,7 +427,7 @@ button {
   min-height: 100%;
   position: relative;
 }
-.wrap__active {
+.wrapper__active {
   position: fixed;
 }
 
