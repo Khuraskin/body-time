@@ -10,7 +10,7 @@ wrap.classList.toggle("wrap__active")
 
 // CallBack
 
-let activeCall = document.querySelector(".back-call");
+let activeCall = document.querySelector(".callback__button");
 const modal = document.querySelector(".callback");
 const closeCall = document.querySelector(".callback__close");
 
