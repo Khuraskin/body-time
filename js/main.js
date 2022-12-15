@@ -100,7 +100,7 @@ downElem.addEventListener("click", function () {
 
 // CallBack
 
-let activeCall = document.querySelector(".main__btn");
+let activeCall = document.querySelector(".main__btn", "back-call");
 let activeMCall = document.querySelector(".main__button-mobile");
 const modal = document.querySelector(".callback");
 const closeCall = document.querySelector(".callback__close");
