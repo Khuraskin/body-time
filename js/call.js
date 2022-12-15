@@ -11,7 +11,7 @@ menuBtn.addEventListener("click", function () {
 
 // CallBack
 
-let activeCall = document.querySelector(".main__btn", ".back-call");
+let activeCall = document.querySelector(".main__btn", ".beauty__call");
 const modal = document.querySelector(".callback");
 const closeCall = document.querySelector(".callback__close");
 
