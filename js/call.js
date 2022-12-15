@@ -14,7 +14,7 @@ let activeCall = document.querySelector(".back-call");
 const modal = document.querySelector(".callback");
 const closeCall = document.querySelector(".callback__close");
 
-activeCallAll.onclick = function () {
+activeCall.onclick = function () {
   modal.style.display = "block";
 };
 
