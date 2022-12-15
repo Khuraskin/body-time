@@ -2381,7 +2381,7 @@ button {
   border-radius: 0;
 }
 .callback__view::before {
-  content: url(../img/check.png);
+  content: url(./img/check.png);
   position: absolute;
   top: 10%;
   right: 25%;
