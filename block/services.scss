@@ -14,11 +14,7 @@
 
   @media (max-width: 767px) {
     &__choice {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 48px;
-      position: relative;
-      align-items: center;
+      justify-content: flex-start;
     }
   }
 
