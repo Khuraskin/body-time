@@ -26,7 +26,19 @@
 
   @media (max-width: 767px) {
     &__info {
-      margin: 30px;
+      margin: 71px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    &__info {
+      margin: 36px;
+    }
+  }
+
+  @media (max-width: 340px) {
+    &__info {
+      margin: 0;
     }
   }
 
