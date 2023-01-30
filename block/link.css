@@ -58,7 +58,6 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100%;
-  overflow: hidden;
 }
 
 .container {
@@ -86,6 +85,13 @@ button {
 .header {
   margin: 20px 0 20px 0;
 }
+@media (max-width: 767px) {
+  .header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+  }
+}
 .header__main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,28 +105,6 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-}
-@media (max-width: 767px) {
-  .header__main {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 5px 5px 5px 5px;
-    background: rgba(255, 255, 255, 0.9);
-  }
 }
 @media (max-width: 767px) {
   .header__nav {
@@ -140,7 +124,6 @@ button {
   height: 40px;
   position: relative;
   z-index: 20;
-  overflow: hidden;
 }
 .header__burger-mobile span {
   background: #000000;
@@ -295,8 +278,8 @@ button {
 .body {
   background: #fff;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .main {
@@ -310,11 +293,6 @@ button {
     margin-bottom: 72px;
   }
 }
-@media (max-width: 400px) {
-  .main {
-    background-size: contain;
-  }
-}
 .main__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,21 +304,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media (max-width: 767px) {
-  .main__info {
-    margin: 71px;
-  }
-}
-@media (max-width: 360px) {
-  .main__info {
-    margin: 36px;
-  }
-}
-@media (max-width: 340px) {
-  .main__info {
-    margin: 0;
-  }
 }
 .main__title {
   font-size: 56px;
@@ -433,22 +396,6 @@ button {
 .main__down {
   margin-bottom: 128px;
   cursor: pointer;
-}
-
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
-  min-height: 100%;
-  position: relative;
-}
-.wrapper__active {
-  position: fixed;
 }
 
 .about-us {
@@ -1030,10 +977,10 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 48px;
-  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 @media (max-width: 767px) {
   .services__choice {
@@ -1054,11 +1001,11 @@ button {
 }
 @media (max-width: 767px) {
   .services__block {
+    position: absolute;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: absolute;
     top: 50px;
     left: 0;
     z-index: 1;
@@ -1134,21 +1081,6 @@ button {
   position: relative;
   margin-left: auto;
 }
-.services__search::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 90%;
-  background: url(../img/search.jpg) no-repeat;
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-}
-@media (max-width: 767px) {
-  .services__search::after {
-    left: 70%;
-  }
-}
 .services__seek {
   cursor: pointer;
 }
@@ -1168,11 +1100,6 @@ button {
 @media (max-width: 767px) {
   .services__input {
     width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  .services__non-padding {
-    padding: 0;
   }
 }
 .services__title {
@@ -1215,18 +1142,11 @@ button {
 .services__col:last-child {
   margin-right: 0;
 }
-.services__img {
-  position: relative;
-  padding: 0px 0px 50% 0px;
-}
 .services__pic {
-  position: absolute;
-  top: 0;
-  left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 16px 16px 0px 0px;
 }
 .services__list {
@@ -1706,6 +1626,7 @@ button {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
+  height: auto;
   border-radius: 16px;
 }
 @media (max-width: 767px) {

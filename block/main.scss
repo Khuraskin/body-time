@@ -12,34 +12,11 @@
     }
   }
 
-  @media (max-width: 400px) {
-    & {
-      background-size: contain;
-    }
-  }
 
   &__info {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  @media (max-width: 767px) {
-    &__info {
-      margin: 71px;
-    }
-  }
-
-  @media (max-width: 360px) {
-    &__info {
-      margin: 36px;
-    }
-  }
-
-  @media (max-width: 340px) {
-    &__info {
-      margin: 0;
-    }
   }
 
   &__title {

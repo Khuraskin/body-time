@@ -3,28 +3,20 @@
     margin: 20px 0 20px 0;
   }
 
+  @media (max-width: 767px) {
+    & {
+      position: sticky;
+      top: 0;   
+      background: #fff;      
+    }
+  }
+
   &__main {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
-  }
-
-  @media (max-width: 767px) {
-    &__main {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 100;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding: 5px 5px 5px 5px;
-      background: rgb(255, 255, 255, 0.9);
-    }
   }
 
   @media (max-width: 767px) {
@@ -47,8 +39,7 @@
     width: 40px;
     height: 40px;
     position: relative;
-    z-index: 20;
-    overflow: hidden;
+    z-index: 20;    
   }
 
   &__burger-mobile span {
