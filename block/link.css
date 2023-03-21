@@ -895,6 +895,7 @@ button {
   width: 16px;
   height: 16px;
   margin-right: 24px;
+  cursor: pointer;
 }
 .stock__dot-active {
   border-radius: 50px;
