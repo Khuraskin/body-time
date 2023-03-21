@@ -892,6 +892,7 @@ button {
 .stock__dot {
   border-radius: 50px;
   background: #AEACAA;
+  cursor: pointer;
   width: 16px;
   height: 16px;
   margin-right: 24px;
